@@ -1,13 +1,11 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
+// Vite config for GitHub Pages deployment
 export default defineConfig({
   plugins: [react()],
-  // Base path needed for GitHub Pages if the repo is not at the root domain
-  // Change './' to '/repo-name/' if you experience issues with assets
-  base: './', 
+  base: '/3D-Infinite-Runner-Shooter/',  // <-- обязательное значение
   build: {
     outDir: 'dist',
-  }
+  },
 })
